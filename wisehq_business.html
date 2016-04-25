@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  <title>WISEHQ</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+   <LINK REL="SHORTCUT ICON" HREF="images/wise.jpg" /> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> 
+  
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+        <link rel="stylesheet" type="text/css" href="css/chart.css">
+        <link rel="stylesheet" href="css/bootstrap-horizon.css">
+        <link rel="stylesheet" href="css/respons.css">
+         
+       
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <style type="text/css">
+           #myNavbar{
+             background-image: url("images/n1.png") ;
+              background-repeat: repeat-x;
+           }
+            .header{
+                    min-height: 30px;
+                     margin-top: 60px;
+                } 
+            .images{
+              height:60px;
+              width:60px;
+            }
+
+
+          .inside_text{
+                     font-size: 17px;
+                    height: 0;
+                    left: 9px;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 14px;
+                    width: 86px;
+                }
+
+            </style>     
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+           <!-- Brand and toggle get grouped for better mobile display -->
+           <div class="container" style="margin-top: 12px;">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                   <a class="navbar-brand" href="wise_home.html"><img class=".img-responsive" src="images/wise.jpg" style="margin-top: -2px; height: 35px;"></a>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="navbarCollapse">
+                   <ul class="nav navbar-nav navbar-right">
+                       <li><a href="wisehq_communication_new.html " target="_blank">Analyst Communication</a></li>
+<!--
+                       <li><a href="" target="_blank"><img src="images/user_icon.png" class=".img-responsive "  style="width: 20px; height: 20px;"></img>  Aditya Shankar</a></li>
+  -->
+                       <li class="dropdown">
+
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle"> 
+                              <img src="images/user_icon.png" class=".img-responsive "  style="width: 30px; height: 30px;">
+                               <strong class="inside_text" style="margin-left: 15px;margin-top: 6px">A</strong>   Aditya Shankar
+                            <b class="caret"></b></a>
+                          
+
+                           <ul class="dropdown-menu">
+                                 <li><a href="#">a.shankar@wisehq.com</a></li>
+                                 <li class="divider"></li>  
+                                 <li><a href="#">Manage Outlet</a></li>
+                                 <li><a href="#">Manage Team </a></li>
+                                 <li><a  data-toggle="modal" data-target="#myModal">Change Password </a>
+                                 </li>
+
+                                <li><a  data-toggle="modal" data-target="#myModal_2" >Sign Out</a></li>
+                         </ul>
+
+                      </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="header">
+                        <ul class="nav navbar-nav navbar-right">
+                                  <li class="dropdown">
+                                      <a href="#" data-toggle="dropdown" class="dropdown-toggle"><b>Route 04</b> <img class="" src="images/add.png" style="height: 65px; width: 65px; "></img> </a>
+                                      <ul class="dropdown-menu">
+                                          <li><a href="#">Question Sets</a></li>
+                                          <li class="divider"></li>
+                                          <li class="active"><a href="#" >Running</a></li>
+                                          <li><a href="#">1-Off</a></li>
+                                          <li><a href="#">Auto Response</a></li>
+                                          <li><a href="#">sharables</a></li>
+                                          
+                                      </ul>
+                                  </li>  
+
+                        </ul>
+       
+                    </div>
+                </div>
+            </div>
+       </div>
+
+   <section>
+     <div class="container">
+     <div class="row">
+       <div class=" col-lg-6 col-md-6 col-sm-6">
+              <div class="chart-container">
+                
+              </div>
+              <p><strong>NPS Chart.</strong></p>
+       </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <form>
+
+        <div class="col-lg-5 col-md-5 col-sm-5 ">
+        <div class="form-group calendar">
+                  <span class="fa fa-calendar-plus-o"></span>
+                  <input class="form-control" id="start_date" placeholder=" Start Date">
+        </div>
+        </div>
+
+        <div class="col-lg-1 col-md-1 col-sm-1">
+         <strong>to</strong>
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-5">
+
+       <div class="form-group calendar">
+            <span class="fa fa-calendar-plus-o"></span>
+            <input text="text" class="form-control" id="end_date" placeholder=" End Date">
+          </div>
+       </div>
+
+     <div class=" col-lg-3 col-md-3 col-sm-3">
+         <strong class="text-center" style="margin-top:15px;margin-left:20px ">show me</strong>
+     </div>
+
+     <div class=" col-lg-5 col-md-5 col-sm-5">
+       <select class="form-control filter" id="sel1">
+        <option >Data from</option>
+        <option >Data from</option>
+        <option >Data from</option>
+      </select>
+    </div>
+
+   <div class="col-lg-5 col-md-5 col-sm-5 ">
+   <strong class="text-center" style="margin-top:15px;margin-left:20px "></strong>
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-4 ">
+   <strong class="text-center" style="margin-top:15px;margin-left:20px "></strong>
+   </div>
+    
+    <div class="col-lg-5 col-md-5 col-sm-5" style="margin-top:0px">
+           <select class="form-control filter " id="sel2">
+                                     <option>Business Unit</option>
+                                     <option>Business Unit</option>
+                                     <option>Business Unit</option>
+                                     <option>Business Unit</option>
+                                   </select>
+    </div>
+
+    <div class="  col-lg-5 col-md-5 col-sm-5" style="margin-top:-8px">
+        <div class="calender"><button class="btn btn-primary" id="submit_cxp" >submit</button></div>
+        </div>
+       </form>
+       </div>
+     </div>
+   </div>
+ </section>
+ <hr>
+
+       <div class="container">  
+                  <div class="row-fluid row-horizon" id="row_business">
+
+
+<!--
+                        <div class="col-md-3 col-lg-3 ">
+                         <div  class="inset">
+                          <img class="" src="images/up-arrow.png" style="height:60px;width:60px;">
+                         </img>
+                         </div>
+                               <p><strong><h4> - Ka Ching!! - </h4></strong></p>
+                                <p> 4 Negative NPS get repeat<br/> business of <strong> 1200$</ strong>
+                                </p>
+                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Details</button>
+
+                               <div class="modal fade" id="myModal" role="dialog">
+                                 <div class="modal-dialog text-center">
+                                    <div class="modal-content">
+                                     <div class="modal-header">
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       <h4 class="modal-title"> Ka Ching!!!</h4>
+                                     </div>
+                                     <div class="modal-body">
+                                       <p>4 Negative NPS get repeat business of 1200$</p>
+                                     </div>
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                 </div>
+                               </div>
+                         </div>
+
+                           <div class="col-md-3 col-lg-3">
+                             <div  class="inset"><img class="" src="images/alarm.png" style="height:60px;width:60px;"></img></div>
+                                <p><strong><h4> - Alert - </h4></strong></p>
+                                 <p> 4 Negative NPS get repeat<br/> business of <strong> 1200$</strong></p>
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">Details</button>
+                                                                             
+                                 <div class="modal fade" id="myModal1" role="dialog">
+                                   <div class="modal-dialog text-center">
+                                   
+                                  
+                                     <div class="modal-content">
+                                       <div class="modal-header">
+                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                         <h4 class="modal-title"> Alert</h4>
+                                       </div>
+                                       <div class="modal-body">
+                                         <p>4 Negative NPS get repeat business of 1200$</p>
+                                       </div>
+                                       <div class="modal-footer">
+                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                       </div>
+                                     </div>
+                                     
+                                   </div>
+                                 </div>
+
+                          </div>
+
+                          <div class="col-md-3 col-lg-3">
+                            <div  class="inset"><img class="" src="images/down-arrow.png" style="height:60px;width:60px;"></img></div>
+                               <p><strong><h4> - Slow Day  - </h4></strong></p>
+                                <p> 4 Negative NPS get repeat<br/> business of <strong> 1200$</strong></p>
+                              
+                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal2">Details</button>
+                                                                            
+                               <div class="modal fade" id="myModal2" role="dialog">
+                                 <div class="modal-dialog text-center">
+                                 
+                                   <div class="modal-content">
+                                     <div class="modal-header">
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       <h4 class="modal-title">Create Deal</h4>
+                                     </div>
+                                     <div class="modal-body">
+                                       <p>Some thing</p>
+                                       <form action="/createDeal">
+                                       <div class="form-group">
+                                         <input class="form-control" type="text" name=""></input>
+                                       </div> 
+                                       <div class="form-group">
+                                       <input class="form-control" type="text" name=""></input>
+                                        </div> 
+                                        <div class="form-group">
+                                        <input class="form-control" type="text" name=""></input>
+                                         </div> 
+                                         <div class="form-group">
+                                         <input class="form-control" type="submit" name="" value="Submit"></input>
+                                          </div> 
+                                       </form>
+                                     </div>
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                     </div>
+                                   </div>
+                                   
+                                 </div>
+                               </div>
+
+                         </div>
+
+                          <div class="col-md-3 col-lg-3">
+                            <div  class="inset" ><img class="" src="images/plane.png" style="height:60px;width:60px;"></img></div>
+                               <p><strong><h4> - I Feel good  - </h4></strong></p>
+                                <p> 4 Negative NPS get repeat<br/> business of <strong> 1200$</strong></p>
+                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal4">Details</button>
+                                                                              
+                                 <div class="modal fade" id="myModal4" role="dialog">
+                                   <div class="modal-dialog text-center">
+                                   
+                              
+                                     <div class="modal-content">
+                                       <div class="modal-header">
+                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                         <h4 class="modal-title"> Alert</h4>
+                                       </div>
+                                       <div class="modal-body">
+                                         <p>4 Negative NPS get repeat business of 1200$</p>
+                                       </div>
+                                       <div class="modal-footer">
+                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                       </div>
+                                     </div>
+                                     
+                                   </div>
+                                 </div>
+
+                         </div>
+
+                         <div class="col-md-3 col-lg-3">
+                            <div  class="inset" ><img class="" src="images/plane.png" style="height:60px;width:60px;"></img></div>
+                               <p><strong><h4> - I Feel good  - </h4></strong></p>
+                                <p> 4 Negative NPS get repeat<br/> business of <strong> 1200$</strong></p>
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal5">Details</button>
+                                                                              
+                                 <div class="modal fade" id="myModal5" role="dialog">
+                                   <div class="modal-dialog text-center">
+                          
+                                     <div class="modal-content">
+                                       <div class="modal-header">
+                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                         <h4 class="modal-title"> Alert</h4>
+                                       </div>
+                                       <div class="modal-body">
+                                         <p>4 Negative NPS get repeat business of 1200$</p>
+                                       </div>
+                                       <div class="modal-footer">
+                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                       </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+
+                         </div>
+                         -->
+
+                  </div>
+               </div>
+
+               <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog text-center">
+                             <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Change Password</h4>
+                                </div>
+                                <div class="modal-body">
+                                   <form class="form-inline" role="form" method="POST">
+                                           <div class="form-group">
+                                            
+                                               <input type="password" class="form-control" id="inputEmail" placeholder="New Password">
+                                           </div>
+                                           <div class="form-group">
+                                               
+                                               <input type="password" class="form-control" id="inputPassword" placeholder="Confirm Password">
+                                           </div>
+                                          
+                                           <input type="submit" class="btn btn-primary" value="Change">
+                                       </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                           <div class="modal fade" id="myModal_2" role="dialog">
+                            <div class="modal-dialog text-center">
+                             <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Confirm Sign Out ?</h4>
+                                </div>
+                                <div class="modal-body">
+                                   <form class="form-inline" role="form" method="POST">
+                                           <div class="form-group">
+                                             <button class="btn btn-primary">Yes </button>
+                                           </div>
+                                           <div class="form-group">
+                                               
+                                              <button class="btn btn-warning" data-dismiss="modal">No </button>
+                                           </div>
+                                 </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+<script src="js/D3.js" type="text/javascript"></script>
+<script src="js/D3tooltip.js" type="text/javascript"></script>
+<script src="js/wise_Dev.js"  type="text/javascript"></script> 
+<script src="js/chart.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $.linechart();
+ $("#start_date,#end_date").datepicker({
+   showWeek:false,  
+ });
+ var defaulttext = $('.defualt-text').text();
+
+$('.selectDefault').text(defaulttext);
+
+$('.selectBox').on('change',function(){
+   var defaulttext2 = $('.selectBox').find(":selected").text(); 
+    $('.selectDefault').text(defaulttext2);
+});
+
+
+});
+</script>
+</body>
+</html>
